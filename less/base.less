@@ -5,5 +5,110 @@ html, body{
     font-size: 14px;
     background: @grey;
     font-family: Arial, Helvetica, sans-serif;
-    color: #666;
+    color: #7B7B7B;
 }
+
+// header
+
+#header{
+    position: relative;
+    padding-top: 56px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+    #logo{
+        position: relative;
+        float: left;
+        width: 213px;
+        height: 54px;
+        margin-left: 10px;
+        .indent;
+        background: url(../img/logo.png) center no-repeat;
+    }
+
+    #site-search{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        background: #fff;
+        .true(46px);
+        .shadow(0 2px 3px rgba(0,0,0,.05));
+
+        label{
+            display: none;
+        }
+
+        input[type=text]{
+            display: block;
+            .true(46px);
+            padding: 0 50px 0 18px;
+            border: 0;
+            font-size: 11px;
+        }
+
+        input[type=submit]{
+            position: absolute;
+            top: 0;
+            right:0;
+            bottom:0;
+            width: 46px;
+            height: 46px;
+            .indent;
+            border:0;
+            background: url(../img/icon-clock-mini.png) center no-repeat;
+        }
+    }
+
+    #quicklinks{
+        display: none;
+    }
+
+    #nav{
+        position: relative;
+        .shadow(0 2px 3px rgba(0,0,0,.05));
+
+        ul{
+            display: none;
+        }
+
+        #grip{
+            position: absolute;
+            right: 10px;
+            top: -61px;
+            height: 46px;
+            width: 46px;
+            background: #999;
+        }
+
+        a{
+            position: relative;
+            display: block;
+            .gradient(#fff, #E5E3E4);
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #7B7B7B;
+            .true(40px);
+            border-bottom: 5px solid @purple;
+            background: url(../img/icon-globe.png) 15px center no-repeat;
+
+            &.to-services{
+                background: url(../img/icon-plane.png) 15px center no-repeat;
+            }
+
+            &.to-about{
+                background: url(../img/icon-page.png) 17px center no-repeat;
+            }
+
+            &.to-tour{
+                background: url(../img/icon-pin.png) 19px center no-repeat;
+            }
+
+            &.active{
+                color: #711DBB;
+                border-color: #711DBB;
+            }
+        }
+    }
