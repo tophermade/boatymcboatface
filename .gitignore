@@ -1,0 +1,12 @@
+# folders
+.idea/
+node_modules/
+dist/
+usr/
+
+# files
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Thumbs.db

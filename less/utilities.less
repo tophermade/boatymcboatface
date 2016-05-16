@@ -1,0 +1,112 @@
+/* misc mixins */
+
+.clip{
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    -o-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.round(@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-sizing(@sizing: border-box){
+    -webkit-box-sizing: @sizing;
+    -moz-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+.scale(@scale: 1.5, @x: 0, @y: 0){
+    -webkit-transform: scale(@scale);
+    -webkit-transform-origin: @x @y;
+    -moz-transform: scale(@scale);
+    -moz-transform-origin: @x @y;
+    -o-transform: scale(@scale);
+    -o-transform-origin: @x @y;
+    -ms-transform: scale(@scale);
+    -ms-transform-origin: @x @y;
+    transform: scale(@scale);
+    transform-origin: @x @y;
+}
+
+.shadow(@depth: 0 2px 4px rgba(0,0,0,.3)){
+    -webkit-box-shadow: @depth;
+    -moz-box-shadow: @depth;
+    -o-box-shadow: @depth;
+    box-shadow: @depth;
+}
+
+.transform(@deg: rotate(9deg)){
+    -webkit-transform: @deg;
+    -moz-transform: @deg;
+    -ms-transform: @deg;
+    -o-transform: @deg;
+    transform: @deg;
+}
+
+.perspective(@val){
+    -webkit-perspective: @val;
+    -moz-perspective: @val;
+    -opera-perspective: @val;
+    -ms-perspective: @val;
+    perspective: @val;
+}
+
+.bgsize(@size: 100% 100%){
+    -webkit-background-size: @size;
+    -moz-background-size: @size;
+    -o-background-size: @size;
+    background-size: @size;
+}
+
+.gradient(@start: #eee, @end: #777) {
+    background: @start;
+    background-image: -moz-linear-gradient(top, @start, @end);
+    background-image: -ms-linear-gradient(top, @start, @end);
+    background-image: -o-linear-gradient(top, @start, @end);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@end));
+    background-image: -webkit-linear-gradient(top, @start, @end);
+    background-image: linear-gradient(top, @start, @end);
+}
+
+
+
+/* handy shortcuts */
+.true(@height: 20px){
+    height: @height;
+    line-height: @height;
+}
+
+.indent(@indent: -9999em){
+    text-indent: @indent;
+}
+
+.clear{/* for use on :after */
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.magic-box{
+    &:before{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content:"";
+    }
+}
+
+
+
+// vars
+@snow:      #FAFBFC;
+@gray:      #EDEEF1;
+@grey:      @gray;
