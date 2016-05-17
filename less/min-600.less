@@ -26,6 +26,16 @@
         position: relative;
         display: block;
 
+        &:before{
+            position: absolute;
+            top: 11px;
+            left:0;
+            right:0;
+            bottom:0;
+            content:'';
+            .gradient(#fff, #E5E3E4);
+        }
+
         &:after{
             .clear;
         }
@@ -35,19 +45,10 @@
             width: 20%;
             padding-top: 11px;
             position: relative;
-
-            &:before{
-                position: absolute;
-                top: 11px;
-                left:0;
-                right:0;
-                bottom:0;
-                content:'';
-                .gradient(#fff, #E5E3E4);
-            }
         }
 
         a{
+            position: relative;
             .box-sizing;
             display: block;
             width: 100%;
@@ -55,6 +56,22 @@
             padding-top: 45px;
             border-bottom: 5px solid @purple;
             font-size: 18px;
+            transition: all ease .3s;
+            
+            &:hover{
+                text-decoration: none;
+                border-color: #A34EF1;
+            }
+
+            &:after{
+                position: absolute;
+                top:0;
+                right:0;
+                bottom: 0px;
+                width: 1px;
+                background: #ddd;
+                content:"";
+            }
 
             &.to-travel,
             &.to-services,
@@ -64,6 +81,7 @@
                 background-position: center 15px;
 
                 &.active{
+                    z-index: 300;
                     height: 119px;
                     margin-top: -11px;
                     padding-top: 56px;
@@ -71,6 +89,10 @@
                     background-position: center 26px;
                     background-color: #fff;
                     .shadow(0 2px 3px rgba(0,0,0,.15));
+
+                    &:after{
+                        display: none;
+                    }
                 }
             }
         }

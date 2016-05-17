@@ -1,4 +1,153 @@
 // header
 #header{
     padding: 41px 10px 20px;
+    overflow: visible;
+    &:after{
+        .clear;
+    }
 }
+
+    #quicklinks{
+        position: relative;
+        float: right;
+        display: block;
+        .true(36px);
+        padding: 5px 20px 0 0;
+        z-index: 200;
+
+        >strong{
+            display: none;
+        }
+
+        nav{
+            position: relative;
+            strong{
+                color: @purple;
+                font-size: 12px;
+                padding-right: 20px;
+                .nexabold;
+                background: url(../img/indicator-action-dropdown.png) center right no-repeat;
+            }
+
+            ul{
+                position: absolute;
+                display: none;
+                top:36px;
+                right:0;
+                left:0;
+                background: #fff;
+                border-top: 1px solid @purple;
+                .shadow;
+
+                li{
+                    position: relative;
+                }
+
+                a{
+                    display: block;
+                    padding-left: 12px;
+                    color: @purple;
+                }
+            }
+        }
+    }
+
+
+// hero
+.hero{
+    height: 538px;
+
+    h1{
+        padding: 40px 0 0 30px;
+        font-size: 75px;
+    }
+}
+
+
+
+// pitch
+.pitch{
+    padding: 40px 0;
+    h2{
+        font-size: 36px;
+
+        em{
+            padding-top: 0;
+            font-size: 13px;
+        }
+    }
+
+    h3{
+        padding-top: 110px;
+    }
+}
+
+    .pitches{
+        padding: 0 20px;
+    }
+
+    .folded-map{
+        position: relative;
+        padding-top: 20px;
+
+        .map-main{
+            position: relative;
+            width: 100%;
+            margin: auto;
+
+            img{
+                position: relative;
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+
+
+//posts
+.post{
+    padding: 64px 54px 34px;
+    clear: both;
+
+    h4{
+        font-size: 28px;
+        padding-bottom: .5em;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(2){
+        float: left;
+        width: 49%;
+        .box-sizing;
+        clear: none;
+    }
+
+    &:nth-of-type(2){
+        margin-left: 2%;
+    }
+}
+
+
+
+// footer
+#footer{
+    overflow: hidden;
+    padding: 24px 20px 48px;
+}
+
+    #foot-logo{
+        margin-left: 0;
+    }
+
+    .site-bio{
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    .socialize{
+        float: right;
+        width: 45%;
+    }
+

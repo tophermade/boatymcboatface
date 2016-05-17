@@ -77,30 +77,32 @@
 
 
     <section class="pitch">
-        <h2>Anywhere, anytime, we're here to help. <em>and we mean that.</em></h2>
+        <div class="inner">
+            <h2>Anywhere, anytime, we're here to help. <em>And we mean that.</em></h2>
 
-        <div class="folded-map">
-            <div class="map-main">
-                <img src="img/visual-map.png" alt="" />
+            <div class="folded-map">
+                <div class="map-main">
+                    <img src="img/visual-map.png" alt="" />
+                </div>
+                <span class="map-pin pin1"></span>
+                <span class="map-pin pin2"></span>
             </div>
-            <span class="map-pin pin1"></span>
-            <span class="map-pin pin2"></span>
+
+            <article class="pitches">
+                <div class="time-pitch">
+                    <h3>Save Time</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut consectetur dicta dolor error esse maxime molestias natus nihil temporibus. Consequuntur cumque debitis ea eum in inventore quas, quis. Amet.</p>
+                </div>
+                <div class="team-pitch">
+                    <h3>Win over the team</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aperiam debitis dignissimos dolorem eaque, explicabo ipsa ipsam labore molestiae officiis quibusdam recusandae tenetur vel vitae. A laudantium necessitatibus quibusdam?</p>
+                </div>
+                <div class="feature-pitch">
+                    <h3>Design Features</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure obcaecati soluta vel veniam! Delectus est fugit, magnam modi quis quo saepe sequi sint! Corporis necessitatibus non officiis temporibus vero.</p>
+                </div>
+            </article>
         </div>
-
-        <article class="pitches">
-            <div class="time-pitch">
-                <h3>Save Time</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut consectetur dicta dolor error esse maxime molestias natus nihil temporibus. Consequuntur cumque debitis ea eum in inventore quas, quis. Amet.</p>
-            </div>
-            <div class="team-pitch">
-                <h3>Win over the team</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aperiam debitis dignissimos dolorem eaque, explicabo ipsa ipsam labore molestiae officiis quibusdam recusandae tenetur vel vitae. A laudantium necessitatibus quibusdam?</p>
-            </div>
-            <div class="feature-pitch">
-                <h3>Design Features</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure obcaecati soluta vel veniam! Delectus est fugit, magnam modi quis quo saepe sequi sint! Corporis necessitatibus non officiis temporibus vero.</p>
-            </div>
-        </article>
     </section><!-- e: pitch -->
 
 
@@ -111,7 +113,7 @@
 
             <div class="team-pics">
                 <ul>
-                    <li>
+                    <li id="team1">
                         <ul>
                             <li>
                                 <div class="headshot">
@@ -155,7 +157,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li id="team2">
                         <ul>
                             <li>
                                 <div class="headshot">
@@ -199,7 +201,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li id="team3">
                         <ul>
                             <li>
                                 <div class="headshot">
@@ -243,7 +245,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li id="team4">
                         <ul>
                             <li>
                                 <div class="headshot">
@@ -290,6 +292,13 @@
                     <!-- grouped into sublists to facilitate effects I may try -->
                 </ul>
             </div>
+
+            <ul class="pic-nav">
+                <li><a href="#team1"></a></li>
+                <li><a href="#team2"></a></li>
+                <li><a href="#team3"></a></li>
+                <li><a href="#team4"></a></li>
+            </ul>
         </div>
     </section><!-- e: team -->
 

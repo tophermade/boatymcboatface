@@ -1,0 +1,153 @@
+.inner{
+    margin: auto;
+    max-width: 940px;
+
+    &:after{
+        .clear;
+    }
+}
+
+// header
+#header{
+    padding: 41px 0 30px;
+}
+#quicklinks{
+
+    > strong{
+        position: relative;
+        display: inline-block;
+        .true(28px);
+        color: #c7c7c7;
+        border-right: 1px solid #c7c7c7;
+        margin: 5px 20px;
+        padding-right: 40px;
+        font-size: 12px;
+
+        &:after{
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom:0;
+            width: 40px;
+            content:"";
+            background: url(../img/icon-pin-tiny.png) center no-repeat;
+        }
+    }
+
+    nav{
+        float: right;
+    }
+}
+
+
+
+// nav
+#nav{
+    margin-bottom: -16px;
+
+    ul:before{
+        .shadow;
+    }
+}
+
+
+
+// hero
+.hero{
+    clear: both;
+    .icon-bubble{
+        position: relative;
+        margin: 30px 0 0 30px;
+        display: block;
+        height: 138px;
+        width: 138px;
+        background: url(../img/icon-bubble.png) center no-repeat;
+        .indent;
+    }
+}
+
+
+
+// pitch
+.pitch{
+    .folded-map{
+        margin-bottom: 0px;
+    }
+}
+
+.pitches{
+    position: relative;
+}
+
+.team-pitch{
+    background-position: center 10px;
+
+    &:after, &:before{
+        position: absolute;
+        top: 36px;
+        left: 240px;
+        width: 141px;
+        height: 3px;
+        .round(5px);
+        background: #6D6D6D;
+        content:"";
+    }
+
+    &:after{
+        left: 560px;
+    }
+}
+
+
+.team{
+    position: relative;
+    background: @grey;
+    padding: 65px 0;
+    h2{
+        position: relative;
+        font-size: 36px;
+        padding-bottom: 45px;
+
+        &:before, &:after{
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            width: 200px;
+            height: 2px;
+            background: #DEDEDE;
+            border-bottom: 1px solid #fff;
+            content:"";
+        }
+
+        &:after{
+            left: auto;
+            right: 10px;
+        }
+    }
+}
+
+    .team-pics{
+        >ul > li{
+            float: left;
+            margin: 0 0 0 20px;
+            &:nth-of-type(1){
+                margin-left:0;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
