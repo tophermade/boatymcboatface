@@ -43,8 +43,6 @@
 
 // nav
 #nav{
-    margin-bottom: -16px;
-
     ul:before{
         .shadow;
     }
@@ -54,7 +52,45 @@
 
 // hero
 .hero{
+    top: -16px;
+    margin-bottom: -16px;
+    margin-top:0;
     clear: both;
+
+    &:after{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content:'';
+        background: url(../img/overlay-squares.png) center no-repeat;
+        opacity:.2;
+    }
+
+    .inner{
+        max-width: 1400px;
+        position: static;
+    }
+
+    h1{
+        max-width: 500px;
+        z-index: 200;
+    }
+
+    .hero-image{
+        top:0;
+        bottom: -150px;
+        right: -100px;
+        left:-100px;
+        img{
+            height:auto;
+            max-height: none;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+
     .icon-bubble{
         position: relative;
         margin: 30px 0 0 30px;
@@ -63,6 +99,7 @@
         width: 138px;
         background: url(../img/icon-bubble.png) center no-repeat;
         .indent;
+        z-index: 200;
     }
 }
 
@@ -183,7 +220,23 @@
 
 
 
-
+// posts
+.post{
+    padding: 50px;
+    &:nth-of-type(1),
+    &:nth-of-type(2){
+        &:before{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 30px;
+            width: 30px;
+            background: url(../img/highlight.jpg) center no-repeat;
+            content:"";
+            .indent;
+        }
+    }
+}
 
 
 

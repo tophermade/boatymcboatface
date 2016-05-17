@@ -7,6 +7,17 @@
     }
 }
 
+    #site-search{
+        label{
+            display: block;
+            position: absolute;
+            top: -15px;
+            line-height:15px;
+            font-size: 12px;
+            visibility: hidden;
+        }
+    }
+
     #quicklinks{
         position: relative;
         float: right;
@@ -15,13 +26,14 @@
         padding: 5px 20px 0 0;
         z-index: 200;
 
-        >strong{
+        > strong{
             display: none;
         }
 
         nav{
             position: relative;
             strong{
+                cursor: pointer;
                 color: @purple;
                 font-size: 12px;
                 padding-right: 20px;
