@@ -185,3 +185,79 @@
 @black:     #262626;
 @purple:    #8F33C4;
 
+
+
+// animation
+.boingOutDown {
+    -webkit-animation-name: boingOutDown;
+    animation-name: boingOutDown;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes boingOutDown {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-transform: perspective(800px) rotateX(0deg) rotateY(10deg);
+    }
+
+    30% {
+        opacity: 1;
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+    }
+
+    40% {
+        opacity: 1;
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform: perspective(800px) rotateX(10deg) rotateY(10deg);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-transform: perspective(800px) rotateX(90deg) rotateY(0deg);
+    }
+}
+@keyframes boingOutDown {
+    0% {
+        opacity: 1;
+        transform-origin: 100% 100%;
+        transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+    }
+
+    20% {
+        opacity: 1;
+        transform-origin: 100% 100%;
+        transform: perspective(800px) rotateX(0deg) rotateY(10deg);
+    }
+
+    30% {
+        opacity: 1;
+        transform-origin: 0% 100%;
+        transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+    }
+
+    40% {
+        opacity: 1;
+        transform-origin: 0% 100%;
+        transform: perspective(800px) rotateX(10deg) rotateY(10deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform-origin: 100% 100%;
+        transform: perspective(800px) rotateX(90deg) rotateY(0deg);
+    }
+}
+

@@ -126,12 +126,41 @@
     }
 }
 
+    .headshot.boingOutDown{
+        opacity:0;
+    }
+
     .team-pics{
         >ul > li{
             float: left;
             margin: 0 0 0 20px;
             &:nth-of-type(1){
                 margin-left:0;
+            }
+        }
+    }
+
+
+    .pic-nav{
+        position: relative;
+        text-align: center;
+        padding-top: 25px;
+
+        li{
+            display: inline-block;
+            padding: 0 2px;
+        }
+
+        a{
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-bottom: 1px solid #fff;
+            background: #979797;
+            .round(100%);
+
+            &.active{
+                background: @purple;
             }
         }
     }
@@ -151,3 +180,7 @@
 
 
 
+// footer
+.socialize{
+    padding-top: 10px;
+}
